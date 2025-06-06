@@ -21,14 +21,15 @@
     }
 
     .container {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.3); /* More transparent background */
       border: 2px solid rgba(255, 255, 255, 0.2);
       border-radius: 20px;
       padding: 50px 40px;
       max-width: 600px;
       width: 90%;
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(10px) brightness(1.2);
+      -webkit-backdrop-filter: blur(10px) brightness(1.2); /* Safari support */
     }
 
     h1 {
@@ -82,7 +83,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Support Tyler </h1>
+    <h1>Support Tyler</h1>
     <p>If my creations resonate with you—whether through art, music, or energy—consider showing your support. Every bit helps me continue doing what I love.</p>
     <a href="https://www.paypal.com/ncp/payment/TUWS26AEHXHQE" class="donate-button" target="_blank">Donate via PayPal</a>
     <footer>
