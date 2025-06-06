@@ -3,87 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support Tyler - Sacred Geometry</title>
+  <title>Support Tyler – Sacred Geometry</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/Milky_Way_Galaxy_Spiral_Arms_Diagram.jpg') center/cover no-repeat;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+                  url('https://upload.wikimedia.org/wikipedia/commons/2/2e/Milky_Way_Galaxy.jpg') center/cover no-repeat;
       background-attachment: fixed;
+      min-height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      color: white;
-      text-shadow: 0 0 5px #000;
+      align-items: center;
+      color: #fff;
+      text-align: center;
     }
 
     .container {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 40px;
-      border-radius: 15px;
-      text-align: center;
-      max-width: 500px;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 50px 40px;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      background: linear-gradient(to right, #ffd700, #ff69b4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 2.8rem;
+      color: #ffd700;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
+      font-size: 1.25rem;
+      margin-bottom: 35px;
+      line-height: 1.6;
+      color: #eee;
     }
 
     .donate-button {
-      background-color: #ffd700;
+      background: linear-gradient(45deg, #ffd700, #ffa500);
       color: black;
       border: none;
-      padding: 15px 30px;
-      font-size: 1.1rem;
-      border-radius: 10px;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 50px;
       cursor: pointer;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
     }
 
     .donate-button:hover {
-      background-color: #ffcc00;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 30px rgba(255, 215, 0, 0.6);
     }
 
     footer {
-      margin-top: 30px;
+      margin-top: 40px;
       font-size: 0.9rem;
-      color: #ccc;
+      color: #aaa;
     }
 
-    .instagram-link {
-      margin-top: 15px;
-      display: inline-block;
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
 
-    .instagram-link:hover {
-      text-decoration: underline;
+      p {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Support Tyler 🌌</h1>
-    <p>If my work resonates with you, consider sharing your gratitude through a donation.</p>
+    <p>If my creations resonate with you—whether through art, music, or energy—consider showing your support. Every bit helps me continue doing what I love.</p>
     <a href="https://www.paypal.com/ncp/payment/TUWS26AEHXHQE" class="donate-button" target="_blank">Donate via PayPal</a>
     <footer>
       <p>&copy; 2025 Tyler Andrews | Cosmic Geometry Vibes</p>
-      <a href="https://instagram.com/yourusername" target="_blank" class="instagram-link">📸 Follow me on Instagram</a>
     </footer>
   </div>
 </body>
